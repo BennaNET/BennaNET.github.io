@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>BennaNET Search</title>
+  <link rel="stylesheet" href="../assets/css/main.css"/>
+</head>
+
+<body>
+
+<header class="topbar">
+  <div class="logo small">BennaNET</div>
+
+  <form id="topSearchForm">
+    <input id="topSearchInput" type="text" />
+  </form>
+</header>
+
+<main id="resultsContainer"></main>
+
+<div id="errorBox" class="error hidden"></div>
+
+<script type="module">
+  import { initSearchPage } from "../assets/js/router.js";
+  initSearchPage();
+</script>
+
+</body>
+</html>
