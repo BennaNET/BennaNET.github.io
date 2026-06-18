@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>BennaNET</title>
+  <link rel="stylesheet" href="./assets/css/main.css"/>
+</head>
+
+<body>
+  <div class="center-wrapper">
+
+    <div class="logo">BennaNET</div>
+
+    <form id="searchForm" autocomplete="off">
+      <input
+        id="searchInput"
+        type="text"
+        placeholder="Search BennaNET..."
+        autofocus
+        required
+      />
+
+      <div class="buttons">
+        <button type="submit">Search</button>
+        <button type="button" id="luckyBtn">I'm Feeling Private</button>
+      </div>
+    </form>
+
+    <div class="footer-note">
+      Lightweight privacy-oriented search interface
+    </div>
+
+  </div>
+
+  <script type="module">
+    import { initHome } from "./assets/js/router.js";
+    initHome();
+  </script>
+</body>
+</html>
